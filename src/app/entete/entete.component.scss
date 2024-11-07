@@ -1,0 +1,13 @@
+:host {
+    .header{
+        display: flex;
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+
+        .sous-titre {
+            font-family: cursive;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<div class="header">
+<p-menubar [model]="items" class="menu">
+    <ng-template pTemplate="start">
+        <a class="flex align-items-center">
+
+            <p-avatar image="assets/ST_avatar.jpeg" size="xlarge" shape="circle"></p-avatar>
+            <div class="ml-2 flex flex-column align-items-center">
+                <span>Siriane Tailhardat</span>
+                <span class="sous-titre">Psychologue Clinicienne</span>
+            </div>
+        </a>
+    </ng-template>
+    <ng-template pTemplate="item" let-item let-root="root">
+        <a class="flex align-items-center p-menuitem-link" [routerLink]="item.routerLink ? [ '/', item.routerLink ] : null">
+            <span [class]="item.icon"></span>
+            <span class="ml-2">{{ item.label }}</span><a ></a>
+        </a>
+    </ng-template>
+</p-menubar>
+</div>
